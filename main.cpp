@@ -16,6 +16,6 @@ TEST(MySuite, case1)
 
 TEST(MySuite, case2)
 {
-    //First test case
+    //Second test case
     ASSERT_TRUE(true);
 }
