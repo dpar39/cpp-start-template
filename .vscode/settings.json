@@ -1,0 +1,17 @@
+{
+    "clangd.arguments": [
+        "--clang-tidy"
+    ],
+    "testMate.cpp.test.executables": "build_*/playground",
+    "python.formatting.provider": "black",
+    "cSpell.diagnosticLevel": "Hint",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+}

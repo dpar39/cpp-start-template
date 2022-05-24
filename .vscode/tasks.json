@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "problemMatcher": "$gcc",
+    "tasks": [
+        {
+            "label": "Build Playground",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                "debug",
+            ],
+            "group": "build",
+        },
+    ]
+}

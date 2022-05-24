@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run playground",
+            "type": "lldb",
+            "request": "launch",
+            "program": "build_debug/playground",
+            "preLaunchTask": "Build Playground"
+        },
+    ]
+}
