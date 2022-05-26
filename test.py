@@ -3,5 +3,5 @@ import unittest
 
 
 class TestSuite1(unittest.TestCase):
-    def test_1(sef):
-        assert True
+    def test_1(self):
+        self.assertTrue(True)

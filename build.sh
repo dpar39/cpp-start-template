@@ -14,6 +14,9 @@ _echo_run_ source "$WORKDIR/.env/bin/activate"
 BUILD_CONFIG=${1:-debug}
 
 BUILD_DIR="$WORKDIR/build_${BUILD_CONFIG}"
+
+export CC=gcc-11
+export CXX=g++-11
 cmake -G Ninja -B"$BUILD_DIR" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
   -DCMAKE_BUILD_TYPE=${BUILD_CONFIG} "$WORKDIR" 
 

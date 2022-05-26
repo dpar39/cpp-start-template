@@ -1,10 +1,13 @@
 #include <algorithm>
+#include <array>
+#include <iostream>
+#include <iterator>
+#include <numeric>
+#include <ranges>
 #include <unordered_map>
 #include <vector>
 
 #include <gtest/gtest.h>
-
-#include <rapidjson/document.h>
 
 using namespace std;
 

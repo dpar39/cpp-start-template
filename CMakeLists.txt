@@ -5,7 +5,6 @@ project(Playground CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(thirdparty/googletest-release-1.11.0)
-include_directories(thirdparty/rapidjson-1.1.0/include)
 
 set(SOURCES main.cpp)
 
