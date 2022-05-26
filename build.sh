@@ -12,13 +12,12 @@ fi
 _echo_run_ source "$WORKDIR/.env/bin/activate"
 
 BUILD_CONFIG=${1:-debug}
-
 BUILD_DIR="$WORKDIR/build_${BUILD_CONFIG}"
 
 export CC=gcc-11
 export CXX=g++-11
-cmake -G Ninja -B"$BUILD_DIR" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-  -DCMAKE_BUILD_TYPE=${BUILD_CONFIG} "$WORKDIR" 
+_echo_run_ cmake -G Ninja -B"$BUILD_DIR" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_BUILD_TYPE=${BUILD_CONFIG} "$WORKDIR"
 
-ninja -C "$BUILD_DIR" ${@:2}
+_echo_run_ ninja -C "$BUILD_DIR" ${@:2}
 ln -sf "$BUILD_DIR/compile_commands.json" "$WORKDIR/compile_commands.json"
